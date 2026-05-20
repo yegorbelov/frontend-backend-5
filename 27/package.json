@@ -1,0 +1,16 @@
+{
+  "name": "practice-27-rabbitmq-tasks",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "setup": "node setup-queues.js",
+    "start": "node server.js",
+    "worker": "node worker.js",
+    "dlq": "node dlq-consumer.js"
+  },
+  "dependencies": {
+    "amqplib": "^0.10.5",
+    "express": "^4.21.2"
+  }
+}
